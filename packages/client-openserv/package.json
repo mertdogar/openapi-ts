@@ -1,7 +1,7 @@
 {
-  "name": "@hey-api/client-axios",
-  "version": "0.8.0",
-  "description": "🚀 Axios client for `@hey-api/openapi-ts` codegen.",
+  "name": "@hey-api/client-openserv",
+  "version": "0.1.0",
+  "description": "🚀 openserv client for `@hey-api/openapi-ts` codegen.",
   "homepage": "https://heyapi.dev/",
   "repository": {
     "type": "git",
@@ -18,7 +18,7 @@
   },
   "funding": "https://github.com/sponsors/hey-api",
   "keywords": [
-    "axios",
+    "openserv",
     "client",
     "codegen",
     "http",
@@ -66,8 +66,7 @@
     "typecheck": "vitest --typecheck --watch=false"
   },
   "peerDependencies": {
-    "@hey-api/openapi-ts": "< 2",
-    "axios": ">= 1.0.0 < 2"
+    "@hey-api/openapi-ts": "< 2"
   },
   "devDependencies": {
     "@config/vite-base": "workspace:*",

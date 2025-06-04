@@ -15,6 +15,10 @@ import {
   defaultConfig as heyApiClientNuxt,
 } from './@hey-api/client-nuxt';
 import {
+  type Config as HeyApiClientOpenserv,
+  defaultConfig as heyApiClientOpenserv,
+} from './@hey-api/client-openserv';
+import {
   type Config as HeyApiLegacyAngular,
   defaultConfig as heyApiLegacyAngular,
 } from './@hey-api/legacy-angular';
@@ -83,6 +87,7 @@ export type UserPlugins =
   | Plugin.UserConfig<HeyApiClientFetch>
   | Plugin.UserConfig<HeyApiClientNext>
   | Plugin.UserConfig<HeyApiClientNuxt>
+  | Plugin.UserConfig<HeyApiClientOpenserv>
   | Plugin.UserConfig<HeyApiLegacyAngular>
   | Plugin.UserConfig<HeyApiLegacyAxios>
   | Plugin.UserConfig<HeyApiLegacyFetch>
@@ -109,6 +114,7 @@ export type ClientPlugins =
   | Plugin.Config<HeyApiClientFetch>
   | Plugin.Config<HeyApiClientNext>
   | Plugin.Config<HeyApiClientNuxt>
+  | Plugin.Config<HeyApiClientOpenserv>
   | Plugin.Config<HeyApiLegacyAngular>
   | Plugin.Config<HeyApiLegacyAxios>
   | Plugin.Config<HeyApiLegacyFetch>
@@ -132,6 +138,7 @@ export const defaultPluginConfigs: DefaultPluginConfigs<ClientPlugins> = {
   '@hey-api/client-fetch': heyApiClientFetch,
   '@hey-api/client-next': heyApiClientNext,
   '@hey-api/client-nuxt': heyApiClientNuxt,
+  '@hey-api/client-openserv': heyApiClientOpenserv,
   '@hey-api/schemas': heyApiSchemas,
   '@hey-api/sdk': heyApiSdk,
   '@hey-api/transformers': heyApiTransformers,

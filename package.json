@@ -20,7 +20,7 @@
   "funding": "https://github.com/sponsors/hey-api",
   "type": "module",
   "scripts": {
-    "build": "turbo run build --filter=\"!@example/openapi-ts-sample\"",
+    "build": "turbo run build --filter=\"!@example/openapi-ts-*\"",
     "changeset": "changeset",
     "client": "sh ./scripts/client.sh",
     "example": "sh ./scripts/example.sh",
@@ -51,6 +51,7 @@
     "@hey-api/client-fetch": "workspace:*",
     "@hey-api/client-next": "workspace:*",
     "@hey-api/client-nuxt": "workspace:*",
+    "@hey-api/client-openserv": "workspace:*",
     "@types/node": "22.10.5",
     "@typescript-eslint/eslint-plugin": "8.29.1",
     "@vitest/coverage-v8": "3.1.1",
